@@ -27,7 +27,7 @@ body.page-dashboard {
         color: $highlightDarker;
         display: block;
       }
-      & > [class*=" icon-"],
+      & > [class*=' icon-'],
       & > [class^=icon-] {
         font-size: 100px;
         &:before {
@@ -43,7 +43,7 @@ body.page-dashboard {
   }
   .grid-item {
     margin: 3em 0 3.5em;
-    & > [class*=" icon-"],
+    & > [class*=' icon-'],
     & > [class^=icon-] {
       font-size: 100px;
     }
@@ -66,7 +66,7 @@ body.page-dashboard {
     }
     .more-info {
       outline: none;
-      [class*=" icon-"],
+      [class*=' icon-'],
       [class^=icon-] {
         transition: all 0.2s;
         font-size: 1.4em;
@@ -81,7 +81,7 @@ body.page-dashboard {
       &:focus {
         text-decoration: none;
         color: #fff;
-        [class*=" icon-"],
+        [class*=' icon-'],
         [class^=icon-] {
           color: $highlightDarker;
         }
@@ -89,7 +89,7 @@ body.page-dashboard {
         &:focus {
           text-decoration: none;
           color: #fff;
-          [class*=" icon-"],
+          [class*=' icon-'],
           [class^=icon-] {
             background-color: $highlightDark;
             background: linear-gradient(25deg,$secondary,$highlightDark);
@@ -101,7 +101,7 @@ body.page-dashboard {
     h2,
     h3 {
       .more-info {
-        [class*=" icon-"],
+        [class*=' icon-'],
         [class^=icon-] {
           font-size: 0.6em;
         }
@@ -125,7 +125,7 @@ body.page-dashboard {
     &.warning {
       .status,
       .int,
-      & > [class*=" icon-"]:before ,
+      & > [class*=' icon-']:before ,
       & > [class^=icon-]:before  {
         background: -webkit-linear-gradient( 25deg,lighten($warning, 10%), darken($warning, 10%) )!important;
         color: $warning;
@@ -136,7 +136,7 @@ body.page-dashboard {
     &.danger {
       .status,
       .int,
-      & > [class*=" icon-"]:before ,
+      & > [class*=' icon-']:before ,
       & > [class^=icon-]:before  {
         background: -webkit-linear-gradient( 25deg,lighten($danger, 10%), darken($danger, 10%) )!important;
         color: $danger;

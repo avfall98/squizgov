@@ -61,8 +61,8 @@ a {
     height: 0;          // needed in drupal version
     border-bottom: 0;   // needed in drupal version
   }
-  [class^="icon-"],
-	[class*=" icon-"] {
+  [class^='icon-'],
+	[class*=' icon-'] {
     &.text-primary {
       color: #fff;
     }
@@ -72,14 +72,14 @@ abbr[data-original-title],
 abbr[title],
 abbr {
   text-decoration: none;    // stop Chrome overriding
-  // border-bottom: none;   // alternate for when many browsers support "text-decoration: underline dotted;"
+  // border-bottom: none;   // alternate for when many browsers support 'text-decoration: underline dotted;'
 }
 
 
 
 // Font Icons
-[class^="icon-"],
-[class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
 	font-size: 50px;
 }
 
@@ -425,8 +425,8 @@ body.front {
       &:active,
       &:focus {
         color: #fff;
-        [class^="icon-"],
-        [class*=" icon-"] {
+        [class^='icon-'],
+        [class*=' icon-'] {
           color: #fff;
         }
       }
@@ -439,15 +439,15 @@ body.front {
 
 
 
-// used on "Why use govCMS?" and support homepage
+// used on 'Why use govCMS?' and support homepage
 .icons-grid {
   padding: 25px 0;
   h2 {
     margin-bottom: 2em;
   }
   span.int,
-  [class^="icon-"],
-  [class*=" icon-"] {
+  [class^='icon-'],
+  [class*=' icon-'] {
     transition: all .2s;
     border: 2px solid;
     border-radius: 100%;
@@ -489,13 +489,13 @@ body.front {
       h4 {
         text-decoration: underline;
       }
-      [class^="icon-"],
-      [class*=" icon-"] {
+      [class^='icon-'],
+      [class*=' icon-'] {
         color: $highlightDark;
       }
     }
-    [class^="icon-"],
-    [class*=" icon-"] {
+    [class^='icon-'],
+    [class*=' icon-'] {
       color: $secondary;
     }
   }
@@ -557,7 +557,7 @@ body.front {
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
     border-left: 60px solid #fff;
-    content: " ";
+    content: ' ';
     float: right;
     position: absolute;
     display: inherit;
@@ -581,7 +581,7 @@ body.front {
       border-left: 0;
       margin: 1em;
       margin-right: 3em;
-      quotes: "\201C" "\201D" "\2018" "\2019";
+      quotes: '\201C' '\201D' '\2018' '\2019';
       &:before,
       &:after {
         color: $highlight;

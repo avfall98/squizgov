@@ -26,7 +26,7 @@
 
 // Card shadows
 // From https://css-tricks.com/snippets/sass/material-shadows-mixin/
-// Don't even think about adding this to something without first reading "Component elevation comparisons":
+// Don't even think about adding this to something without first reading 'Component elevation comparisons':
 // https://material.io/guidelines/material-design/elevation-shadows.html#elevation-shadows-elevation-android
 /**
  * Computes a top-shadow for a card effect.
@@ -72,7 +72,7 @@
   @if $depth < 1 {
     box-shadow: none;
   } @else if $depth > 5 {
-    @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+    @warn 'Invalid $depth `#{$depth}` for mixin `card`.';
   } @else {
     box-shadow: bottom-shadow($depth), top-shadow($depth);
   }
