@@ -1,0 +1,158 @@
+body.page-dashboard {
+  #about {
+    margin-bottom: 0;
+  }
+}
+
+.dashboard {
+  padding: 0;
+  margin-bottom: 1.5em;
+  &.bg-primary {
+    @include background-gradient(mix($highlight,$secondary,80%), mix($highlight,$secondary,20%), $secondary);
+    .grid-item {
+      .int {
+        strong {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.light {
+    .grid-item {
+      .int {
+        // the below is a Sass function in the Drupal theme's Sass:
+        background: -webkit-linear-gradient(25deg,$secondary,$highlightDark)!important;
+        -webkit-background-clip: text!important;
+        -webkit-text-fill-color: transparent;
+        color: $highlightDarker;
+        display: block;
+      }
+      & > [class*=" icon-"],
+      & > [class^=icon-] {
+        font-size: 100px;
+        &:before {
+          padding: 5px;
+          // the below is a Sass function in the Drupal theme's Sass:
+          background: -webkit-linear-gradient(25deg,$secondary,$highlightDark)!important;
+          -webkit-background-clip: text!important;
+          -webkit-text-fill-color: transparent;
+          color: $highlightDarker;
+        }
+      }
+    }
+  }
+  .grid-item {
+    margin: 3em 0 3.5em;
+    & > [class*=" icon-"],
+    & > [class^=icon-] {
+      font-size: 100px;
+    }
+    & > h2,
+    & > h3 {
+      font-weight: 200;
+      margin: 0;
+    }
+    .int {
+      font-size: 150%;
+      strong {
+        color: $highlightDark;
+        font-size: 330%;
+        font-weight: 400;
+      }
+    }
+    small {
+      font-size: 1em;
+      display: block;
+    }
+    .more-info {
+      outline: none;
+      [class*=" icon-"],
+      [class^=icon-] {
+        transition: all 0.2s;
+        font-size: 1.4em;
+        color: $highlightDark;
+        border-radius: 100%;
+        position: relative;
+        top: -.09em;
+        padding: 1px;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        color: #fff;
+        [class*=" icon-"],
+        [class^=icon-] {
+          color: $highlightDarker;
+        }
+        &:active,
+        &:focus {
+          text-decoration: none;
+          color: #fff;
+          [class*=" icon-"],
+          [class^=icon-] {
+            background-color: $highlightDark;
+            background: linear-gradient(25deg,$secondary,$highlightDark);
+            color: #fff;
+          }
+        }
+      }
+    }
+    h2,
+    h3 {
+      .more-info {
+        [class*=" icon-"],
+        [class^=icon-] {
+          font-size: 0.6em;
+        }
+      }
+    }
+    .status {
+      display: block;
+      margin-bottom: 1em;
+    }
+    .status-name {
+      margin-top: 1em;
+    }
+    &.operational {
+      .status {
+        background: -webkit-linear-gradient( 25deg,$secondary,$highlightDark)!important;
+        -webkit-background-clip: text!important;
+        -webkit-text-fill-color: transparent;
+        color: $highlightDarker;
+      }
+    }
+    &.warning {
+      .status,
+      .int,
+      & > [class*=" icon-"]:before ,
+      & > [class^=icon-]:before  {
+        background: -webkit-linear-gradient( 25deg,lighten($warning, 10%), darken($warning, 10%) )!important;
+        color: $warning;
+        -webkit-background-clip: text!important;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &.danger {
+      .status,
+      .int,
+      & > [class*=" icon-"]:before ,
+      & > [class^=icon-]:before  {
+        background: -webkit-linear-gradient( 25deg,lighten($danger, 10%), darken($danger, 10%) )!important;
+        color: $danger;
+        -webkit-background-clip: text!important;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+
+.popover {
+  border-radius: $radius;
+}
+.popover-title {
+  background-color: $greyLight;
+  color: $highlightDarker;
+  font-weight: 500;
+}
